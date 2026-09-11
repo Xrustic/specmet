@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter24pt-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+.logo {
+    display: block;
+    max-width: 20%;
+    height: auto;
+}
+
+.header {
+    border-top: 10px solid #df392b;
+    border-bottom: 1px solid grey;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.indent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.basic-information {
+    text-align: right;
+}
+
+.footer {
+    border-top: 5px solid #df392b;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.teg {
+    background-color: #df392b;
+    display: inline-block;
+    color: white;
+    padding: 4px 12px;
+}
+
+.red {
+    color: #df392b;
+}
+
+li::marker {
+  color: red;
+}
+
+.red-line {
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin: 20px 0;
+}
+
+.section-of-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-left: 4px solid #e31e24;
+    padding: 1px 20px;
+}
+
+.card .card-number {
+    line-height: 0.8;
+    margin-top: 15px;
+    margin-bottom: -12px;
+    color: #df392b;
+}
+
+.card .card-text {
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+.black-color {
+    color: black;
+}
+
+.card-cooperation {
+    background-color: #f8f9fa;
+    border-top: 4px solid #e31e24;
+    padding: 1px 20px;
+    text-align: center;
+}
+
+.card-cooperation .card-text {
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+.contact-cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    color: white;
+}
+
+.contact-card {
+    background-color: #222222;
+    border-radius: 6px;
+    padding: 18px 24px;
+}
+
+.lite-grey {
+    color: dimgrey;
+}
