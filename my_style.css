@@ -31,6 +31,60 @@ body {
     padding-right: 20px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    body {
+    padding: 0 10px;
+    }
+}
+
+.css-tabs input[type="radio"] {
+    display: none;
+}
+
+.css-tabs label {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #eee;
+}
+
+.css-tabs .tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 6px;
+}
+
+.css-tabs input[type="radio"]:checked + label {
+    background: #e52d27;
+    color: #fff;
+}
+
+#tab1:checked ~ .id-1,
+#tab2:checked ~ .id-2,
+#tab3:checked ~ .id-3,
+#tab4:checked ~ .id-4,
+#tab5:checked ~ .id-5,
+#tab6:checked ~ .id-6 {
+    display: block;
+}
+
 .subtitle {
     margin: 4px 0 0 0;
     font-size: 12px;
@@ -64,6 +118,7 @@ body {
 }
 
 .footer-text-right {
+    margin: 0;
     text-align: right;
     font-size: 10px;
     padding-top: -20px;
@@ -76,6 +131,9 @@ body {
 .footer {
     border-top: 5px solid #df392b;
     text-align: right;
+    flex-shrink: 0;
+    height: auto;
+    margin-top: auto;
     padding-right: 20px;
     font-size: 16px;
     line-height: 1.2;
@@ -205,5 +263,6 @@ li::marker {
   grid-template-columns: repeat(2, 1fr);
   gap: 12px 40px;
   padding-left: 20px;
+  flex: 1;
   list-style-type: disc;
 }
