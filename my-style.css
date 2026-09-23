@@ -4,37 +4,69 @@
     font-weight: 400;
 }
 
-.css-tabs input[type="radio"] {
-    display: none;
+@media (max-width: 768px) {
+    .header {
+        align-items: center !important;
+        gap: 12px;
+        padding-left: 20px !important;
+    }
+    
+    .logo {
+        width: auto;
+    }
+
+    .section-of-cards {
+        gap: 12px;
+        font-size: 11px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .two-column-list {
+        margin-bottom: 32vh !important;
+    }
+
+    .list {
+        padding-left: 10px;
+        flex-wrap: wrap;
+        flex-basis: 31%;
+    }
 }
 
-.css-tabs label {
+@media (min-width:768px) {
+  .section-of-cards {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+.list {
+    display: flex;
+    gap: 8px;
+}
+
+.item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.link {
     display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
     background: #eee;
     font-size: 13px;
+    text-decoration: none;
 }
 
-.css-tabs .tab-content {
-    display: none;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 0 6px 6px 6px;
-}
-
-.css-tabs input[type="radio"]:checked + label {
+.item .active {
     background: #e52d27;
     color: #fff;
-}
-
-#tab1:checked ~ .id-1,
-#tab2:checked ~ .id-2,
-#tab3:checked ~ .id-3,
-#tab4:checked ~ .id-4,
-#tab5:checked ~ .id-5,
-#tab6:checked ~ .id-6 {
-    display: block;
 }
 
 body {
@@ -42,7 +74,9 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
 
@@ -62,31 +96,6 @@ body {
     border-bottom: 1px solid grey;
     padding-left: 40px;
     padding-right: 20px;
-}
-
-@media (max-width: 532px) {
-    .header {
-        align-items: center;
-        gap: 12px;
-    }
-
-    .section-of-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        font-size: 11px;
-    }
-
-    body {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    .two-column-list {
-        margin-bottom: 32vh !important;
-    }
 }
 
 .subtitle {
@@ -169,7 +178,7 @@ body {
     color: #df392b;
 }
 
-li::marker {
+.points::marker {
     color: red;
 }
 
@@ -182,7 +191,7 @@ li::marker {
 
 .section-of-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 15px;
 }
@@ -239,13 +248,13 @@ li::marker {
 }
 
 .two-column-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 40px;
-  padding-left: 20px;
-  flex: 1;
-  list-style-type: disc;
-  margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 40px;
+    padding-left: 20px;
+    flex: 1;
+    list-style-type: disc;
+    margin-bottom: 40vh;
 }
 
 .footer {
