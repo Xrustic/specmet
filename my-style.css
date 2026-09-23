@@ -53,7 +53,6 @@
 .item {
     display: inline-block;
     list-style-type: none;
-    color: #000;
 }
 
 .link {
@@ -61,6 +60,7 @@
     padding: 10px 20px;
     cursor: pointer;
     background: #eee;
+    color: #000;
     font-size: 13px;
     text-decoration: none;
 }
