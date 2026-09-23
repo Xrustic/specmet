@@ -53,6 +53,7 @@
 .item {
     display: inline-block;
     list-style-type: none;
+    color: #000;
 }
 
 .link {
