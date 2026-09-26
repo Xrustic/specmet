@@ -1,73 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="./normalize.css">
-        <link rel="stylesheet" href="./my-style.css?v1">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Спецмет</title>
-    </head>
+{% include "header.html" %}
 
-    <body>
-        <main>
-            <header class="header">
-                <section class="header-left">
-                    <img src="./photos/logo.jpg" alt="Логотип компании" class="logo">
-                    <div class="location-of-text">
-                        <h1>Спецмет</h1>
-                        <p class="subtitle">Производственное предприятие</p>
-                    </div>
-                </section>
+<p class="teg">Комерческое предлдожение</p>
+<h1>Металлообработка <span class="red">и литейное</span> производство</h1>
+<p>
+    Изготовление специального оборудования, деталей и узлов для сельскохозяйственной и промыщленной техники.
+</p>
+<div class="red-line"></div>
+<ul class="two-column-list">
+    <li class="points">Литьё до 1500 кг</li>
+    <li class="points">Фрезерная обработка</li>
+    <li class="points">Плазменная резка</li>
+    <li class="points">Токарная обработка</li>
+    <li class="points">Сварочные работы</li>
+    <li class="points">Механосборочные работы</li>
+</ul>
 
-                <section class="text-right">
-                    <p class="footer-subtitle">ООО «СПЕЦМЕТ»</p>
-                    <p>
-                        <a href="tel:+7 (991) 212-05-13" class="black-color"><strong>+7 (991) 212-05-13</strong></a>
-                    </p>
-                    <p>
-                        <a href="mailto:specmet.ct@gmail.com" class="red">specmet.ct@gmail.com</a>
-                    </p>
-                </section>
-            </header>
-
-            <nav class="nav">
-                <ul class="list">
-                    <li class="item"><a href="index.html" class="link active">Главная</a></li>
-                    <li class="item"><a href="tokarnaya-obrabotca.html" class="link">Токарная обработка</a></li>
-                    <li class="item"><a href="liteynoe-proizvodstvo.html" class="link">Литейное производство</a></li>
-                    <li class="item"><a href="svarochnie-raboti.html" class="link">Сварочные работы</a></li>
-                    <li class="item"><a href="frezernaya-obrabotca.html" class="link">Фрезерная обработка</a></li>
-                    <li class="item"><a href="cooperation.html" class="link">Сотрудничество</a></li>
-                </ul>
-            </nav>
-
-            <div>
-                <section class="indent">
-                    <p class="teg">Комерческое предлдожение</p>
-                    <h1>Металлообработка <span class="red">и литейное</span> производство</h1>
-                    <p>
-                        Изготовление специального оборудования, деталей и узлов<br>
-                        для сельскохозяйственной и промыщленной техники
-                    </p>
-                    <div class="red-line"></div>
-                    <ul class="two-column-list">
-                        <li class="points">Литьё до 1500 кг</li>
-                        <li class="points">Фрезерная обработка</li>
-                        <li class="points">Плазменная резка</li>
-                        <li class="points">Токарная обработка</li>
-                        <li class="points">Сварочные работы</li>
-                        <li class="points">Механосборочные работы</li>
-                    </ul>
-                </section>
-            </div>
-
-            <footer class="footer">
-                <p class="footer-subtitle">Юридический адресс</p>
-                <p class="footer-text-right">309070, Белгородская область,<br>
-                    м. о. Яковлевский, г. Строитель,<br>
-                    ул. Тополиная, д. 88
-                </p>
-            </footer>
-        </main>
-    </body>
-</html>
+{% include "footer.html" %}

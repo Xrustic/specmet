@@ -1,123 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="./normalize.css">
-        <link rel="stylesheet" href="./my-style.css?v1">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Фрезерная обработка</title>
-    </head>
+{% include "header.html" %}
 
-    <body>
-        <header class="header">
-            <section class="header-left">
-                <img src="./photos/logo.jpg" alt="Логотип компании" class="logo">
-                <div class="location-of-text">
-                    <h1>Спецмет</h1>
-                    <p class="subtitle">Производственное предприятие</p>
-                </div>
-            </section>
+<p class="teg">Производственные возможности</p>
+<h1>Фрезерная обработка <span class="red">и плазменная резка</span></h1>
+<p>
+    Механическая обработка деталей сложной конфигурации 
+    и раскрой листового металла с ЧПУ-точностью.
+</p>
+<div class="red-line"></div>
 
-            <section class="text-right">
-                <p class="footer-subtitle">ООО «СПЕЦМЕТ»</p>
-                <p>
-                    <a href="tel:+7 (991) 212-05-13" class="black-color"><strong>+7 (991) 212-05-13</strong></a>
-                </p>
-                <p>
-                    <a href="mailto:specmet.ct@gmail.com" class="red">specmet.ct@gmail.com</a>
-                </p>
-            </section>
-        </header>
+<article class="section-of-cards">
+    <div class="card">
+        <h1 class="card-number">01</h1>
+        <h3 class="card-text">Фрезерование</h3>
+        <p>
+            Обработка плоскостей, шлицев, канавок, отверстий. 
+            Детали корпусного типа, шестерни, фланцы.
+        </p>
+    </div>
 
-        <nav class="nav">
-            <ul class="list">
-                <li class="item"><a href="index.html" class="link">Главная</a></li>
-                <li class="item"><a href="tokarnaya-obrabotca.html" class="link">Токарная обработка</a></li>
-                <li class="item"><a href="liteynoe-proizvodstvo.html" class="link">Литейное производство</a></li>
-                <li class="item"><a href="svarochnie-raboti.html" class="link">Сварочные работы</a></li>
-                <li class="item"><a href="frezernaya-obrabotca.html" class="link active">Фрезерная обработка</a></li>
-                <li class="item"><a href="cooperation.html" class="link">Сотрудничество</a></li>
-            </ul>
-        </nav>
+    <div class="card">
+        <h1 class="card-number">02</h1>
+        <h3 class="card-text">Плазменная резка</h3>
+        <p>
+            Раскрой листового металла на станках с ЧПУ. 
+            Чистый срез, минимальная зона термического влияния.
+        </p>
+    </div>
 
-        <section  class="indent">
-            <p class="teg">Производственные возможности</p>
-            <h1>Фрезерная обработка <span class="red">и плазменная резка</span></h1>
-            <p>
-                Механическая обработка деталей сложной конфигурации 
-                и раскрой листового металла с ЧПУ-точностью.
-            </p>
-            <div class="red-line"></div>
+    <div class="card">
+        <h1 class="card-number">03</h1>
+        <h3 class="card-text">Серийность</h3>
+        <p>
+            Производство от единичных изделий до крупных партий. 
+            Стабильное качестко на каждой детали.
+        </p>
+    </div>
+</article>
 
-            <article class="section-of-cards">
-                <div class="card">
-                    <h1 class="card-number">01</h1>
-                    <h3 class="card-text">Фрезерование</h3>
-                    <p>
-                        Обработка плоскостей, шлицев, канавок, отверстий. 
-                        Детали корпусного типа, шестерни, фланцы.
-                    </p>
-                </div>
+<article class="photos-galery">
+    <div class="gallery-item">
+        <img src="./photos/injection-molded_products.jpg" alt="литьевые изделия, прошедшие механическую обработку" class="photo">
+        <div class="image-caption">Литьевые изделия, прошедшие механическую обработку</div>
+    </div>
 
-                <div class="card">
-                    <h1 class="card-number">02</h1>
-                    <h3 class="card-text">Плазменная резка</h3>
-                    <p>
-                        Раскрой листового металла на станках с ЧПУ. 
-                        Чистый срез, минимальная зона термического влияния.
-                    </p>
-                </div>
+    <div class="gallery-item">
+        <img src="./photos/gears.jpg" alt="Шестерни и зубчатые венцы" class="photo">
+        <div class="image-caption">Шестерни и зубчатые венцы</div>
+    </div>
 
-                <div class="card">
-                    <h1 class="card-number">03</h1>
-                    <h3 class="card-text">Серийность</h3>
-                    <p>
-                        Производство от единичных изделий до крупных партий. 
-                        Стабильное качестко на каждой детали.
-                    </p>
-                </div>
-            </article>
+    <div class="gallery-item">
+        <img src="./photos/mechanical_processing_of_products.jpg" alt="Мехобработка изделий" class="photo">
+        <div class="image-caption">Мехобработка изделий</div>
+    </div>
 
-            <article class="photos-galery">
-                <div class="gallery-item">
-                    <img src="./photos/injection-molded_products.jpg" alt="литьевые изделия, прошедшие механическую обработку" class="photo">
-                    <div class="image-caption">Литьевые изделия, прошедшие механическую обработку</div>
-                </div>
+    <div class="gallery-item">
+        <img src="./photos/workpieces_for_machining.jpg" alt="Заготовки под мех. обработку" class="photo">
+        <div class="image-caption">Заготовки под мех. обработку</div>
+    </div>
+</article>
+<hr>
 
-                <div class="gallery-item">
-                    <img src="./photos/gears.jpg" alt="Шестерни и зубчатые венцы" class="photo">
-                    <div class="image-caption">Шестерни и зубчатые венцы</div>
-                </div>
+<p>
+    <strong>Фрезерование:</strong> обработка сталей, чугунов, цветных сплавов. 
+    Размеры деталей до 800×600×400 мм. 
+    Шлицевые соединения, шпоночные пазы, 
+    резьбовые отверстия.<br>
+    <strong>Плазменная резка:</strong> листовой прокат толщиной до 25 мм 
+    (сталь), до 15 мм (нержавеющая сталь, алюминий). 
+    Раскрой по чертежам заказчика, минимальные отходы.
+</p>
 
-                <div class="gallery-item">
-                    <img src="./photos/mechanical_processing_of_products.jpg" alt="Мехобработка изделий" class="photo">
-                    <div class="image-caption">Мехобработка изделий</div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="./photos/workpieces_for_machining.jpg" alt="Заготовки под мех. обработку" class="photo">
-                    <div class="image-caption">Заготовки под мех. обработку</div>
-                </div>
-            </article>
-            <hr>
-
-            <p>
-                <strong>Фрезерование:</strong> обработка сталей, чугунов, цветных сплавов. 
-                Размеры деталей до 800×600×400 мм. 
-                Шлицевые соединения, шпоночные пазы, 
-                резьбовые отверстия.<br>
-                <strong>Плазменная резка:</strong> листовой прокат толщиной до 25 мм 
-                (сталь), до 15 мм (нержавеющая сталь, алюминий). 
-                Раскрой по чертежам заказчика, минимальные отходы.
-            </p>
-        </section>
-
-        <footer class="footer">
-            <p class="footer-subtitle">Юридический адресс</p>
-            <p class="footer-text-right">309070, Белгородская область,<br>
-                м. о. Яковлевский, г. Строитель,<br>
-                ул. Тополиная, д. 88
-            </p>
-        </footer>
-    </body>
-</html>
+{% include "footer.html" %}

@@ -65,7 +65,7 @@
     text-decoration: none;
 }
 
-.item .active {
+.active .link {
     background: #e52d27;
     color: #fff;
 }
