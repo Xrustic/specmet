@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/png" href="./photos/favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/my-style.css?v1">
         <meta charset="UTF-8">
@@ -32,12 +33,12 @@
 
             <nav class="nav">
                 <ul class="list">
-                    <li class="item active"><a href="index.html" class="link">Главная</a></li>
-                    <li class="item"><a href="tokarnaya-obrabotca.html" class="link">Токарная обработка</a></li>
-                    <li class="item"><a href="liteynoe-proizvodstvo.html" class="link">Литейное производство</a></li>
-                    <li class="item"><a href="svarochnie-raboti.html" class="link">Сварочные работы</a></li>
-                    <li class="item"><a href="frezernaya-obrabotca.html" class="link">Фрезерная обработка</a></li>
-                    <li class="item"><a href="cooperation.html" class="link">Сотрудничество</a></li>
+                    <li class="item {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}"><a href="index.html" class="link">Главная</a></li>
+                    <li class="item {% if page.url == '/tokarnaya-obrabotca.html' or page.url == '/index.html' %}active{% endif %}"><a href="tokarnaya-obrabotca.html" class="link">Токарная обработка</a></li>
+                    <li class="item {% if page.url == '/liteynoe-proizvodstvo.html' or page.url == '/index.html' %}active{% endif %}"><a href="liteynoe-proizvodstvo.html" class="link">Литейное производство</a></li>
+                    <li class="item {% if page.url == '/svarochnie-raboti.html' or page.url == '/index.html' %}active{% endif %}"><a href="svarochnie-raboti.html" class="link">Сварочные работы</a></li>
+                    <li class="item {% if page.url == '/frezernaya-obrabotca.html' or page.url == '/index.html' %}active{% endif %}"><a href="frezernaya-obrabotca.html" class="link">Фрезерная обработка</a></li>
+                    <li class="item {% if page.url == '/cooperation.html' or page.url == '/index.html' %}active{% endif %}"><a href="cooperation.html" class="link">Сотрудничество</a></li>
                 </ul>
             </nav>
 

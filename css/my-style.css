@@ -4,50 +4,12 @@
     font-weight: 400;
 }
 
-@media (max-width: 768px) {
-    .header {
-        align-items: center !important;
-        gap: 12px;
-        padding-left: 20px !important;
-    }
-    
-    .logo {
-        width: auto;
-    }
-
-    .section-of-cards {
-        gap: 12px;
-        font-size: 11px;
-    }
-
-    body {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    .two-column-list {
-        margin-bottom: 32vh !important;
-    }
-
-    .list {
-        padding-left: 10px;
-        flex-wrap: wrap;
-        flex-basis: 31%;
-    }
-}
-
-@media (min-width:768px) {
-  .section-of-cards {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-}
-
 .list {
     display: flex;
     gap: 8px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    flex-basis: 31%;
 }
 
 .item {
@@ -84,27 +46,31 @@ body {
 .logo {
     display: block;
     margin-top: 15px;
-    max-width: 20%;
-    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
     width: auto;
 }
 
 .header {
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     border-top: 10px solid #df392b;
     border-bottom: 1px solid grey;
-    padding-left: 40px;
     padding-right: 20px;
+    line-height: 1.6;
 }
 
 .subtitle {
     margin: 4px 0 0 0;
-    font-size: 12px;
+    font-size: 10px;
     color: #777;
     letter-spacing: 3px;
     margin-top: -20px;
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
 .header-left {
@@ -141,6 +107,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
     gap: 24px;
     max-inline-size: 100%;
+    margin-bottom: 20px;
 }
 
 .gallery-item {
@@ -154,8 +121,54 @@ body {
 .photo {
     width: 100%;
     height: 250px;
+    cursor: zoom-in;
     object-fit: cover;
     display: block;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-out;
+}
+
+.overlay img {
+    position: relative;
+    z-index: 2;
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.overlay:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay:target img {
+    transform: scale(1);
 }
 
 .image-caption {
@@ -173,6 +186,7 @@ body {
     display: inline-block;
     color: white;
     padding: 4px 12px;
+    font-size: 16px;
 }
 
 .red {
@@ -190,10 +204,14 @@ body {
     margin: 20px 0;
 }
 
+.size-of-text-paragraph {
+    font-size: 14px;
+}
+
 .section-of-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 12px;
     margin-bottom: 15px;
 }
 
@@ -201,6 +219,7 @@ body {
     background-color: #f8f9fa;
     border-left: 4px solid #e31e24;
     padding: 1px 20px;
+    font-size: 13px;
 }
 
 .card .card-number {
@@ -211,8 +230,8 @@ body {
 }
 
 .card .card-text {
-    line-height: 0.8;
     margin-bottom: 0;
+    line-height: 2;
 }
 
 .black-color {
@@ -224,6 +243,7 @@ body {
     border-top: 4px solid #e31e24;
     padding: 1px 20px;
     text-align: center;
+    font-size: 13px;
 }
 
 .card-cooperation .card-text {
@@ -236,16 +256,22 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     color: white;
+    margin-bottom: 30px;
 }
 
 .contact-card {
     background-color: #222222;
     border-radius: 6px;
     padding: 18px 24px;
+    font-size: 13px;
 }
 
 .lite-grey {
     color: dimgrey;
+}
+
+address {
+    margin-bottom: 20px;
 }
 
 .two-column-list {
@@ -255,7 +281,8 @@ body {
     padding-left: 20px;
     flex: 1;
     list-style-type: disc;
-    margin-bottom: 40vh;
+    margin-bottom: 32vh;
+    font-size: 14px;
 }
 
 .footer {
@@ -281,4 +308,41 @@ body {
     font-size: 10px;
     color: #777;
     line-height: 1.2;
+}
+
+@media (min-width:768px) {
+    .section-of-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .card-cooperation {
+        font-size: 14px;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+
+    .size-of-text-paragraph {
+        font-size: 15px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .header {
+        line-height: 1;
+    }
+
+    .logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .two-column-list {
+        margin-bottom: 40vh;
+    }
 }
