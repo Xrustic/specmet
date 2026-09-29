@@ -4,4 +4,6 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
 
     eleventyConfig.addPassthroughCopy("fonts");
+
+    eleventyConfig.addPassthroughCopy("favicon.png");
 };

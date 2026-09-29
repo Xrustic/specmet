@@ -10,6 +10,7 @@
     padding-left: 10px;
     flex-wrap: wrap;
     flex-basis: 31%;
+    padding-left: 20px;
 }
 
 .item {
@@ -89,7 +90,6 @@ body {
 .indent {
     padding-left: 20px;
     padding-right: 20px;
-    max-inline-size: 100%;
 }
 
 .text-right {
@@ -210,7 +210,7 @@ body {
 
 .section-of-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
     margin-bottom: 15px;
 }
@@ -290,7 +290,6 @@ address {
     text-align: right;
     flex-shrink: 0;
     padding-right: 20px;
-    font-size: 16px;
     line-height: 1.2;
     height: auto;
 }
@@ -301,13 +300,20 @@ address {
     font-size: 12px;
     padding-top: -20px;
     margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 .footer-subtitle {
     margin: 4px 0 0 0;
-    font-size: 10px;
+    font-size: 13px;
     color: #777;
-    line-height: 1.2;
+}
+
+@media (min-width:520px) {
+    .section-of-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
 }
 
 @media (min-width:768px) {
@@ -321,7 +327,7 @@ address {
     }
 
     .card {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .size-of-text-paragraph {
